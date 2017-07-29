@@ -17,6 +17,5 @@ def image_to_text(image_array, file_name):
             git_logs.write("\n")
     git_logs.close()
 
-image_array = cv2.imread("randomimages/kevin.png")
-
-image_to_text(image_array, "hallo.txt")
+image_array = cv2.imread(sys.argv[1])
+image_to_text(image_array, sys.argv[2])
